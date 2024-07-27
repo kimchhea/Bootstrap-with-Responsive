@@ -1,0 +1,499 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  height: auto;
+  position: sticky;
+  top: 0px;
+}
+nav .row {
+  width: 1200px;
+  height: 70px;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 3px 3px rgb(106, 106, 106);
+}
+.col {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  /* background-color: rgba(198, 197, 195, 0.63); */
+}
+.drop-downa {
+  width: 150px;
+  left: 910px;
+  top: 70px;
+  opacity: 0;
+  position: absolute;
+  height: 500px;
+  visibility: hidden;
+  transition: 0.5s;
+  background-color: rgb(209, 208, 207);
+}
+.drop-downb {
+  width: 120px;
+  left: 1000px;
+  top: 70px;
+  opacity: 0;
+  position: absolute;
+  height: auto;
+  /* visibility: hidden; */
+  transition: 0.5s;
+  background-color: rgb(209, 208, 207);
+}
+.ul-down {
+  list-style: none;
+}
+.drop-downb .ul-down .li-drop-down a {
+  display: flex;
+  padding: 10px 10px;
+  /* margin-top: 20px; */
+
+  text-decoration: none;
+}
+.drop-downa .ul-down .li-drop-down a {
+  /* flex-direction: column; */
+  display: flex;
+  padding: 10px 10px;
+  /* margin-top: 20px; */
+  text-decoration: none;
+}
+.col-a .left a:hover {
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+
+.col-a .left ul li:hover .drop-downa {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+.col-a .left ul li:hover .drop-downb {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+.col-a {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+
+}
+.col-a .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  /* position: relative; */
+  background-color: rgb(255, 255, 255);
+}
+.col ul li a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgb(86, 87, 87); */
+}
+.col-a .left ul li a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-style: 20px;
+  display: inline;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+ul li a {
+  display: flex;
+  padding: 8px 10px;
+  font-style: 30px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.right .button:nth-child(1) {
+  width: 40%;
+  height: 30px;
+  border-radius: 5px;
+  margin: auto;
+  border: 2px solid black;
+  /* background-color: rgb(221, 218, 218); */
+}
+.right .button:nth-child(2) {
+  width: 57%;
+  height: 30px;
+  border-radius: 5px;
+  margin: auto;
+  background-color: rgb(16, 16, 16);
+}
+.container {
+  width: 1200px;
+  height: auto;
+  /* background-color: beige; */
+  margin: auto;
+  margin-top: 100px;
+}
+.right .button:nth-child(1) h1 {
+  font-size: 15px;
+  padding-left: 5px;
+  /* color: aliceblue; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.right .button:nth-child(2) h1 {
+  font-size: 14px;
+  padding-left: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+}
+.row {
+  width: 1200px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: antiquewhite; */
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.card-text {
+  width: 60%;
+  height: 100%;
+  /* background-color: rgb(118, 118, 118); */
+}
+.card-img {
+  width: 40%;
+  height: 100%;
+  background-color: rgb(182, 188, 188);
+}
+.card-text h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  color: rgb(20, 20, 20);
+  padding-top: 100px;
+  font-weight: bold;
+}
+.card-text h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3z0px;
+  color: rgb(15, 15, 16);
+  font-weight: bold;
+  padding-top: 20px;
+}
+.button {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* background-color: bisque; */
+}
+.button .left {
+  width: 40%;
+  border-radius: 10px;
+  height: 60px;
+  padding-left: 10px;
+  background-color: rgb(30, 30, 51);
+}
+.button .right {
+  width: 40%;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: rgba(249, 249, 248, 0);
+}
+.card-text-a {
+  width: 600px;
+  height: 200px;
+  /* margin-bottom: 50px; */
+  /* background-color: antiquewhite; */
+  margin: auto;
+  margin-top: 50px;
+}
+.card-text span {
+  font-weight: lighter;
+  text-decoration: underline;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-text h3 {
+  font-weight: lighter;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-boxinto {
+  width: 1200px;
+  height: 200px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}
+.card-boxinto .box {
+  width: 20%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.card-boxinto .box h1 {
+  font-size: 50px;
+  font-weight: blolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-boxinto .box h2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-boxinto .box p {
+  font-size: 15px;
+  padding-top: 10px;
+  font-weight: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.box-information {
+  width: 47%;
+  height: 800px;
+  /* background-color: rgb(95, 146, 146); */
+}
+.box-img {
+  width: 47%;
+  height: 800px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: beige;
+}
+.box-information h1 {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 10px;
+}
+.box-information h2 {
+  font-weight: bold;
+  font-size: 35px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 20px;
+}
+.box-information span {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 20px;
+  display: flex;
+  color: rgba(0, 0, 0, 0.348);
+}
+.box-information h3 {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 20px;
+}
+.Button {
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgb(38, 38, 70);
+}
+.Button a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  padding: 5px 14px;
+}
+.Row {
+  width: 1200px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: black; */
+}
+.card-left-box {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card-right-box {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.Row .card-img {
+  width: 40%;
+  border-radius: 10px;
+  height: 90%;
+  overflow: hidden;
+  /* background-color: blue; */
+}
+.Row .card-Text {
+  width: 45%;
+  height: 80%;
+  /* background-color: blue; */
+}
+.contact {
+  width: 1200px;
+  height: 100px;
+  display: flex;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.contact .left {
+  width: 50%;
+  height: 100%;
+  /* background-color: rgb(120, 121, 121); */
+}
+.contact .right {
+  width: 50%;
+  height: 100%;
+  margin-left: 100px;
+  background-color: rgb(255, 255, 255);
+}
+.button .left h1 {
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  color: aliceblue;
+  padding: 14px 18px;
+}
+.card-text-a p {
+  color: rgba(0, 0, 0, 0.566);
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.button .right h1 {
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  color: rgb(7, 7, 7);
+  padding: 14px 18px;
+}
+.card-text-a h1 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.card-text-a h2 {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.card-text-a span {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  padding-top: 5px;
+  color: rgba(95, 158, 160, 0.534);
+  justify-content: center;
+  font-weight: lighter;
+}
+.card-Text h1 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.card-Text h2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.card-Text span {
+  font-size: 15px;
+  font-weight: normal;
+  padding-top: 10px;
+  display: flex;
+  text-align: justify;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.card-logo {
+  width: 150px;
+  /* background-color: black; */
+  height: 40px;
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+}
+.box-logo {
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  border: 5px;
+  /* background-color: antiquewhite; */
+}
+.box-logo a {
+  text-decoration: none;
+  font-size: 30px;
+  display: flex;
+  padding: 5px 7px;
+  color: black;
+}
+.box-logo:hover {
+  background-color: rgb(172, 170, 170);
+}
+.contact h1 {
+  font-size: 25px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact .left ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}
+.contact .left a {
+  text-decoration: none;
+  font-size: 15px;
+  color: rgba(91, 91, 91, 0.452);
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.contact .left ul li a:hover {
+  color: black;
+}
+.contact .right input {
+  width: 200px;
+  height: 30px;
+  margin-top: 50px;
+  margin-left: 10px;
+  position: absolute;
+}
+button {
+  width: 70px;
+  height: 30px;
+  position: absolute;
+  margin-left: 240px;
+  margin-top: 50px;
+}
+footer {
+  width: 1200px;
+  height: 50px;
+  background-color: black;
+  margin: auto;
+}
+.card-text-a p {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
